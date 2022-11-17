@@ -1,6 +1,3 @@
-rm -rf dist &&
-parcel src/index.html &&
-^C &&
 cd dist &&
 git init &&
 git add . &&
