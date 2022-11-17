@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #eee;
+	margin: 20px 0;
+}
+article {
+	width: 21cm;
+	min-height: 29.7cm;
+	background: white;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 1.27cm;
+}
+p {
+	margin: 0;
+	line-height: 1.5;
+}
+h1 {
+	font-size: 25px;
+	margin-top: 0;
+}
+h3 {
+	font-size: 18px;
+	color: #333;
+	margin: 0;
+}
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+ol,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+strong {
+	font-weight: normal;
+	color: #f60;
+}
+a {
+	color: #999;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+li {
+	color: #666;
+	margin: 0.3em 0;
+}
+
+.info {
+	position: relative;
+}
+.info > img {
+	position: absolute;
+	width: 2.5cm;
+	top: 0;
+	right: 0;
+	/* margin-top: -130px; */
+}
+.qr-code {
+	width: 2.5cm;
+}
+
+.projects > ol {
+	margin-top: 0;
+	list-style-position: inside;
+	padding: 0;
+}
+.projects > ol > li {
+	margin-bottom: 24px;
+}
+.projects > ol > li > header {
+	display: flex;
+	justify-content: space-between;
+}
+.projects .details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills > .wrapper > ul > li {
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+
+.exp > ol > li {
+	margin: 12px 0;
+}
+.exp header {
+	display: flex;
+	color: #666;
+	margin-bottom: 12px;
+}
+.exp header > h3 {
+	font-size: 18px;
+	color: #333;
+}
+.exp header > h4 {
+	margin-left: 1em;
+	font-size: 18px;
+}
+.exp header > span {
+	font-size: 18px;
+	margin-left: auto;
+}
+
+@media (max-width: 500px) {
+	body {
+		margin: 0;
+	}
+	article {
+		width: auto;
+		height: auto;
+	}
+	.exp header {
+		flex-direction: column;
+	}
+	.exp header > h3,
+	.exp header > h4,
+	.exp header > span {
+		margin: 0;
+	}
+}
