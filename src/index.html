@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="device-width" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+		/>
 		<title>我的简历</title>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
@@ -16,7 +19,7 @@
 					<li>
 						<p>男 | 24岁 | 广东江门</p>
 					</li>
-					<li>应聘职位：前端工程师</li>
+					<li>求职意向：前端工程师</li>
 					<li><p>手机：18596307183 | 邮箱：sujiaxin0000@foxmail.com</p></li>
 				</ol>
 			</section>
@@ -40,20 +43,35 @@
 						<header>
 							<h3>V3-UI</h3>
 							<span>
-								<a href="https://github.com/AeahKa/V3-UI">源码链接</a>
-								<a href="https://aeahka.github.io/V3-UI-Website/index.html#/"
+								<a target="_blank" href="https://github.com/AeahKa/V3-UI"
+									>源码链接</a
+								>
+								<a
+									target="_blank"
+									href="https://aeahka.github.io/V3-UI-Website/index.html#/"
 									>项目预览</a
 								>
 							</span>
 						</header>
 						<span class="details">
-							<span class="describtion"
-								><p>
+							<span class="describtion">
+								<p>
+									技术栈：Vue 3，Vite，TypeScript，Vue Router，Sass，Webpack 等
+								</p>
+								<p>
 									一个基于 <strong>Vue 3</strong> /
 									<strong>TypeScript</strong> 的 UI 组件库。
 								</p>
-								<p>主要组件包括开关、按钮、对话框、标签。</p>
-								<p>搭设了官网用以展示组件。</p>
+								<p>
+									使用Vite搭设了官网用以展示组件；通过 Vue Router
+									实现页面切换；使用了 iconfont.cn 添加 logo 和图标。
+								</p>
+								<p>
+									组件包括开关、按钮、对话框、标签。在实现组件功能的过程中使用了
+									v-if 、v-model 、 slot 、 Teleport 、 ref
+									等知识；使用scss为组件添加样式。
+								</p>
+								<p>坚持模块化，源代码可读性高</p>
 							</span>
 							<img class="qr-code" src="./image/v3-ui.png" />
 						</span>
@@ -62,8 +80,12 @@
 						<header>
 							<h3>Memoney 记得记账</h3>
 							<span>
-								<a href="https://github.com/AeahKa/memoney">源码链接</a>
-								<a href="https://aeahka.github.io/memoney-beta/#/statement"
+								<a target="_blank" href="https://github.com/AeahKa/memoney"
+									>源码链接</a
+								>
+								<a
+									target="_blank"
+									href="https://aeahka.github.io/memoney-beta/#/statement"
 									>项目预览</a
 								>
 							</span>
@@ -71,9 +93,19 @@
 						<span class="details">
 							<span class="describtion">
 								<p>
-									一个基于 <strong>Vue 2</strong> /
-									<strong>TypeScript</strong> 的移动端单页面应用
+									技术栈：Vue 2，Vue Cli，TypeScript，Vue Router，Vuex ，local
+									storage 等。
 								</p>
+								<p>
+									一个基于 <strong>Vue 2</strong> /
+									<strong>TypeScript</strong> 的移动端单页面应用。
+								</p>
+								<p>
+									使用 Vue Cli 搭建项目，通过 Vue Router 实现页面切换；全局使用
+									Vuex 管理数据、实现增删改；记账数据储存在local storage
+									中；使用 scss 设置样式。
+								</p>
+								<p>通过 Layout 组件实现全局底部导航栏。</p>
 								<p>
 									这是根据我个人的使用习惯设计开发的记账应用，依靠微信内置浏览器能够实现随手快速记账。
 								</p>
@@ -85,8 +117,12 @@
 						<header>
 							<h3>计算器</h3>
 							<span>
-								<a href="https://github.com/AeahKa/calculator">源码链接</a>
-								<a href="https://aeahka.github.io/calculator-demo/index.html"
+								<a target="_blank" href="https://github.com/AeahKa/calculator"
+									>源码链接</a
+								>
+								<a
+									target="_blank"
+									href="https://aeahka.github.io/calculator-demo/index.html"
 									>项目预览</a
 								>
 							</span>
@@ -99,9 +135,10 @@
 								</p>
 								<p>原型是为记得记账项目开发的子组件。</p>
 								<p>
-									由于其已实现计算器的基础功能，特将其抽离并从 Vue 2
+									组件已实现计算器的基础功能，特将其抽离成独立工具并从 Vue 2
 									<strong>升级为 Vue 3</strong>。
 								</p>
+								<p>主要难点在于计算逻辑和优化使用体验。</p>
 							</span>
 							<img class="qr-code" src="./image/calculator.png" />
 						</span>
@@ -110,47 +147,93 @@
 						<header>
 							<h3>FrontPage</h3>
 							<span>
-								<a href="https://github.com/AeahKa/nav">源码链接</a>
-								<a href="https://aeahka.github.io/nav/dist/index.html"
+								<a target="_blank" href="https://github.com/AeahKa/nav"
+									>源码链接</a
+								>
+								<a
+									target="_blank"
+									href="https://aeahka.github.io/nav/dist/index.html"
 									>项目预览</a
 								>
 							</span>
 						</header>
 						<span class="details">
 							<span class="describtion">
+								<p>技术栈：HTML、JavaScript、CSS、jQuery</p>
 								<p>
 									一个基于 <strong>HTML</strong> / <strong>JS</strong> /
 									<strong>CSS</strong> 的个人导航网页
 								</p>
+								<p>使用响应式设计。</p>
+								<p>使用了 hashmap 储存网页标签数据。</p>
 								<p>支持百度搜索功能，支持添加、修改、删除标签。</p>
 								<p>默认书签是一些我在前端开发中会使用到的网站。</p>
 							</span>
 							<img class="qr-code" src="./image/frontpage.png" />
 						</span>
 					</li>
-					<li>
+					<li class="nextPage">
 						<header>
 							<h3>皮卡丘</h3>
 							<span>
-								<a href="https://github.com/AeahKa/Pikachu">源码链接</a>
-								<a href="https://aeahka.github.io/Pikachu/dist/index.html"
+								<a target="_blank" href="https://github.com/AeahKa/Pikachu"
+									>源码链接</a
+								>
+								<a
+									target="_blank"
+									href="https://aeahka.github.io/Pikachu/dist/index.html"
 									>项目预览</a
 								>
 							</span>
 						</header>
 						<span class="details">
 							<span class="describtion">
-								<p>一个使用 <strong>CSS</strong> 绘制的皮卡丘。</p>
+								<p>
+									一个使用 <strong>CSS</strong> /
+									<strong>JS</strong>
+									绘制的皮卡丘静态展示以及绘制过程<strong>演示动画</strong>。
+								</p>
 								<p>学习 CSS 和动画时制作的小玩意。</p>
 								<p>
-									除了单纯的展示静态图外，还加入了<strong>过程演示</strong>，包括绘制过程动画和
-									CSS 代码展示，以及一些小功能。
+									除了展示静态外。通过 JS
+									实现了演示动画的播放、暂停、变速，以及实时预览 CSS
+									代码的功能。
 								</p>
 							</span>
 							<img class="qr-code" src="./image/pikachu.png" />
 						</span>
 					</li>
 				</ol>
+			</section>
+
+			<section class="skills">
+				<h2>技能</h2>
+				<div>
+					<p>
+						熟悉
+						<strong>HTML</strong
+						>、<strong>JavaScript</strong>、<strong>CSS</strong>、<strong
+							>SCSS</strong
+						>
+						等前端技术。
+					</p>
+					<p>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong>。</p>
+					<p>
+						熟悉<strong>前后端分离</strong>技术，包括
+						AJAX、跨域、前端路由、Cookie、Session 等
+					</p>
+					<p>
+						熟练掌握 <strong>Vue 2</strong> /
+						<strong>Vue 3</strong> 全家桶的使用，包括
+						VueCli、Vite、VueRouter、Vuex 等。
+					</p>
+					<p>
+						熟悉 <strong>ES6</strong>，包括 let / Promise / await / 析构赋值
+					</p>
+					<p>了解 <strong>TypeScript</strong> 的使用。</p>
+					<p>了解 <strong>Webpack 的配置和优化</strong>。</p>
+					<p>熟练使用 <strong>Git</strong> ，了解常用命令。</p>
+				</div>
 			</section>
 
 			<section class="projects">
@@ -160,15 +243,19 @@
 						<header>
 							<h3>画板</h3>
 							<span
-								><a href="https://github.com/AeahKa/canvas">源码链接</a>
-								<a href="https://aeahka.github.io/canvas/dist/index.html"
+								><a target="_blank" href="https://github.com/AeahKa/canvas"
+									>源码链接</a
+								>
+								<a
+									target="_blank"
+									href="https://aeahka.github.io/canvas/dist/index.html"
 									>项目预览</a
 								>
 							</span>
 						</header>
 						<span class="details">
 							<span class="describtion">
-								<p>学习 Canvas 时制作的小东西。</p>
+								<p>学习 Canvas 时制作的简易画板。</p>
 							</span>
 							<img class="qr-code" src="./image/canvas.png" />
 						</span>
@@ -176,29 +263,15 @@
 					<li>
 						<header>
 							<h3>jQuery库</h3>
-							<span><a href="https://github.com/AeahKa/dom">源码链接</a></span>
+							<span
+								><a target="_blank" href="https://github.com/AeahKa/dom"
+									>源码链接</a
+								></span
+							>
 						</header>
 						<p>手写的简易 jQuery 库。</p>
 					</li>
 				</ol>
-			</section>
-
-			<section class="skills">
-				<h2>技能</h2>
-				<div>
-					<p>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong>。</p>
-					<p>
-						熟悉<strong>前后端分离</strong>技术，包括
-						AJAX、跨域、前端路由、Cookie、Session 等
-					</p>
-					<p>
-						熟练掌握 <strong>Vue全家桶</strong>的使用，包括
-						VueCli、Vite、VueRouter、Vuex 等。
-					</p>
-					<p>熟悉 ES6，包括 let / Promise / await / 析构赋值</p>
-					<p>了解 <strong>TypeScript</strong> 的使用。</p>
-					<p>了解 <strong>Webpack 的配置和优化</strong></p>
-				</div>
 			</section>
 
 			<section class="exp">
@@ -225,11 +298,8 @@
 				<h2>其他链接</h2>
 				<ol>
 					<li>
-						<a href="https://juejin.cn/user/4077424600946663">我的博客</a>
-					</li>
-					<li>
-						<a href="https://github.com/AeahKa">我的 GitHub</a>，过去三个月有
-						300 余次提交。
+						<a target="_blank" href="https://github.com/AeahKa">我的 GitHub</a
+						>，过去三个月有 300 余次提交。
 					</li>
 				</ol>
 			</section>

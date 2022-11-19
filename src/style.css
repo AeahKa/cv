@@ -64,6 +64,7 @@ li {
 }
 .qr-code {
 	width: 2.5cm;
+	height: 2.5cm;
 }
 
 .projects > ol {
@@ -124,5 +125,23 @@ li {
 	.exp header > h4,
 	.exp header > span {
 		margin: 0;
+	}
+}
+
+@media print {
+	article {
+		padding: 0;
+	}
+	.nextPage {
+		page-break-before: always;
+		margin-top: 1.27cm;
+	}
+}
+
+@media (max-width: 500px) {
+	article {
+		width: auto;
+		height: auto;
+		padding: 16px;
 	}
 }
